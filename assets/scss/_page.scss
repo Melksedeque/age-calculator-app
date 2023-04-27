@@ -1,12 +1,12 @@
 main.page {
-    height: calc(100vh - 86px);
+    height: calc(100vh - 55px);
     div.age-calculator {
         background: $white;
-        border-radius: 20px 20px 100px 20px;
+        border-radius: 20px 20px 150px 20px;
         display: block;
         margin: 0 auto;
         padding: 50px;
-        width: 800px;
+        width: 740px;
         form.calculator {
             display: flex;
             flex-flow: row wrap;
@@ -45,6 +45,7 @@ main.page {
                     content: '';
                     display: block;
                     height: 1px;
+                    opacity: .5;
                     position: absolute;
                     top: 50%;
                     transform: translateY(-50%);
