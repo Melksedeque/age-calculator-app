@@ -1,5 +1,10 @@
 body {
     background: $off_white;
+    font-family: $font;
     min-height: 100vh;
 }
 
+span.error {
+    color: $light_red;
+    font: 400 italic 12px $font;
+}
