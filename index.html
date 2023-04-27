@@ -24,22 +24,22 @@
           <div class="form-group">
             <label for="day">Day</label>
             <input type="text" name="day" id="day" class="form-control" placeholder="DD" maxlength="2" data-day>
-            <span class="error error_empty_day">This field is required</span>
-            <span class="error error_validation">Must be a valid day</span>
+            <span class="error error_empty_day d-none">This field is required</span>
+            <span class="error error_validation d-none">Must be a valid day</span>
           </div>
           <div class="form-group">
             <label for="month">Month</label>
             <input type="text" name="month" id="month" class="form-control" placeholder="MM" maxlength="2" data-month>
-            <span class="error error_empty_month">This field is required</span>
-            <span class="error error_validation">Must be a valid month</span>
+            <span class="error error_empty_month d-none">This field is required</span>
+            <span class="error error_validation d-none">Must be a valid month</span>
           </div>
           <div class="form-group">
             <label for="year">Year</label>
             <input type="text" name="year" id="year" class="form-control" placeholder="YYYY" maxlength="4" data-year>
-            <span class="error error_empty_year">This field is required</span>
-            <span class="error error_validation">Must be in the past</span>
+            <span class="error error_empty_year d-none">This field is required</span>
+            <span class="error error_validation d-none">Must be in the past</span>
           </div>
-          <span class="error error_validation_form">Must be a valid date!</span>
+          <span class="error error_validation_form d-none">Must be a valid date!</span>
           <div class="submit-form">
             <button type="submit" id="calculate" class="btn-submit">
               <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
