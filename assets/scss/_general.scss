@@ -4,6 +4,19 @@ body {
     min-height: 100vh;
 }
 
+a, button {
+    transition: all .25s ease;
+    outline: none;
+}
+
+input.form-control {
+    &:focus {
+        border-color: $purple;
+        box-shadow: none;
+        outline: none;
+    }
+}
+
 span.error {
     color: $light_red;
     font: 400 italic 12px $font;
