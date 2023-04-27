@@ -7,7 +7,33 @@ main.page {
         margin: 0 auto;
         padding: 50px;
         width: 800px;
+        form.calculator {
+            display: flex;
+            flex-flow: row wrap;
+            div.form-group {
+                flex: 0 1 20%;
+                label {
+                    color: $off_black;
+                    font: 400 14px $font;
+                    text-transform: uppercase;
+                }
+                input {
+                    color: $off_black;
+                    font: 700 20px $font;
+                    &::placeholder {
+                        color: lighten($off_black, 50%);
+                    }
+                }
+            }
+            span.error_validation_form {
+                flex: 1 1 100%;
+            }
+            div.submit-form {
+                flex: 1 1 100%;
+            }
+        }
         h1, h2, h3 {
+            color: $off_black;
             font: italic 800 80px/90px $font;
             span {
                 color: $purple;
