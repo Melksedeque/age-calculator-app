@@ -1,0 +1,18 @@
+div.attribution {
+    background: transparent;
+    color: $smokey_gray;
+    font: 400 10px $font;
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    a {
+        color: $purple;
+        transition: all .25s ease;
+        &:hover {
+            color: $off_black;
+        }
+    }
+}
+
+@media screen and (max-width: $mobile) {
+}
