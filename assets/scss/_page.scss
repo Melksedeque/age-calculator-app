@@ -26,10 +26,23 @@ main.page {
                     padding: 10px 20px;
                     width: 90%;
                     &::placeholder {
-                        color: lighten($off_black, 50%);
+                        color: $off_black;
+                        opacity: .5;
                     }
                     &:hover {
                         border-color: $purple;
+                    }
+                }
+                &.invalid {
+                    label {
+                        color: $light_red;
+                    }
+                    input {
+                        border-color: $light_red;
+                        &::placeholder {
+                            color: $light_red;
+                            opacity: .5;
+                        }
                     }
                 }
             }
