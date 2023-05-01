@@ -1,5 +1,5 @@
 main.page {
-    height: calc(100vh - 55px);
+    min-height: calc(100vh - 55px);
     div.age-calculator {
         background: $white;
         border-radius: 20px 20px 150px 20px;
@@ -83,6 +83,49 @@ main.page {
             font: italic 800 80px/90px $font;
             span {
                 color: $purple;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 601px) {
+    main.page {
+        min-height: 100%;
+        div.age-calculator {
+            border-radius: 25px 25px 100px 25px;
+            margin: 50px auto;
+            padding: 50px 20px;
+            width: 340px;
+            form.calculator {
+                gap: 0;
+                justify-content: space-between;
+                div.form-group {
+                    flex: 0 1 90px;
+                    margin-bottom: 30px;
+                    label {
+                        font: 700 10px $font;
+                    }
+                    input {
+                        font: 700 20px $font;
+                        padding: 7px 15px;
+                        width: 100%;
+                    }
+                }
+                div.submit-form {
+                    margin-bottom: 30px;
+                    text-align: center;
+                    button[type="submit"] {
+                        height: 65px;
+                        width: 65px;
+                        svg {
+                            transform: scale(.6);
+                        }
+                    }
+                }
+            }
+            h1, h2, h3 {
+                font: italic 800 50px/60px $font;
             }
         }
     }
