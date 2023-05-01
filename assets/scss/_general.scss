@@ -21,3 +21,10 @@ span.error {
     color: $light_red;
     font: 400 italic 12px $font;
 }
+
+
+@media screen and (max-width: 601px) {
+    span.error {
+        font-size: 10px;
+    }
+}
