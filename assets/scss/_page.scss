@@ -48,6 +48,7 @@ main.page {
             }
             span.error_validation_form {
                 flex: 1 1 100%;
+                margin-top: 10px;
             }
             div.submit-form {
                 flex: 1 1 100%;
@@ -113,7 +114,6 @@ main.page {
                 justify-content: space-between;
                 div.form-group {
                     flex: 0 1 90px;
-                    margin-bottom: 30px;
                     label {
                         font: 700 10px $font;
                     }
@@ -124,7 +124,7 @@ main.page {
                     }
                 }
                 div.submit-form {
-                    margin-bottom: 30px;
+                    margin: 30px auto;
                     text-align: center;
                     button[type="submit"] {
                         height: 65px;
