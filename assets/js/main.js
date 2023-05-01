@@ -4,7 +4,6 @@ const date = new Date();
 const currentDay = String(date.getDate()).padStart(2, '0');
 const currentMonth = String(date.getMonth() + 1).padStart(2, '0');
 const currentYear = date.getFullYear();
-const currentDate = `${currentDay}/${currentMonth}/${currentYear}`;
 
 const form = document.querySelector('form.calculator');
 const inputDay = document.querySelector('input[name="day"]');
@@ -18,6 +17,10 @@ const spanErrorEmptyYear = document.querySelector('span.error_empty_year');
 const spanErrorWrongYear = document.querySelector('span.error_validation_year');
 const spanValidationMessage = document.querySelector('span.error_validation_form');
 const btnSubmit = document.getElementById('btnCalculate');
+
+const resultYears = document.querySelector('span.number-years');
+const resultMonths = document.querySelector('span.number-months');
+const resultDays = document.querySelector('span.number-days');
 
 inputs.forEach(input => {
     input.addEventListener('input', (e) => {
@@ -38,5 +41,10 @@ inputMonth.addEventListener('input', () => {
 });
 
 form.addEventListener('submit', (e) => {
-    validateForm(e);
+    if(validateForm(e) === true) {
+        ageCalculator();
+    }
+    else {
+        alert("Something is not working properly!");
+    }
 });
