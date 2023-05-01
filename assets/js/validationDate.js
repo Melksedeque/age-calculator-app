@@ -58,5 +58,4 @@ function validateForm(e) {
     }
 
     spanValidationMessage.classList.add('d-none');
-    alert("Calculating!");
 }
