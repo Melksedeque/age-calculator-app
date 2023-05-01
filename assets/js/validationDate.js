@@ -51,11 +51,10 @@ function validateForm(e) {
         inputMonth.parentNode.classList.add('invalid');
         inputYear.parentNode.classList.add('invalid');
         spanValidationMessage.classList.remove('d-none');
-        console.log(day);
-        console.log(month);
-        console.log(year);
         return
     }
 
     spanValidationMessage.classList.add('d-none');
+    
+    return true;
 }
