@@ -89,6 +89,17 @@ main.page {
 }
 
 
+@media screen and (max-width: 1001px) {
+    main.page {
+        min-height: 100%;
+        div.age-calculator {
+            margin: 50px auto;
+            width: 600px;
+        }
+    }
+}
+
+
 @media screen and (max-width: 601px) {
     main.page {
         min-height: 100%;
