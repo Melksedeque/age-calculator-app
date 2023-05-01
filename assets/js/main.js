@@ -1,6 +1,12 @@
 const inputs = document.querySelectorAll('input[name="day"], input[name="month"], input[name="year"]');
-const currentDate = new Date();
 
+const date = new Date();
+const currentDay = String(date.getDate()).padStart(2, '0');
+const currentMonth = String(date.getMonth() + 1).padStart(2, '0');
+const currentYear = date.getFullYear();
+const currentDate = `${currentDay}/${currentMonth}/${currentYear}`;
+
+const form = document.querySelector('form.calculator');
 const inputDay = document.querySelector('input[name="day"]');
 const spanErrorEmptyDay = document.querySelector('span.error_empty_day');
 const spanErrorWrongDay = document.querySelector('span.error_validation_day');
@@ -10,16 +16,29 @@ const spanErrorWrongMonth = document.querySelector('span.error_validation_month'
 const inputYear = document.querySelector('input[name="year"]');
 const spanErrorEmptyYear = document.querySelector('span.error_empty_year');
 const spanErrorWrongYear = document.querySelector('span.error_validation_year');
+const spanValidationMessage = document.querySelector('span.error_validation_form');
 const btnSubmit = document.getElementById('btnCalculate');
 
 inputs.forEach(input => {
-    input.addEventListener('input', function(e) {
+    input.addEventListener('input', (e) => {
         input.value = input.value.replace(/[^0-9]/g, '');
     });
 });
 
-btnSubmit.addEventListener("click", (e) => {
-    e.preventDefault();
-    validateEmptyFields();
-    validateDate();
+inputDay.addEventListener('input', () => {
+    if(inputDay.value.length === 2) {
+        inputMonth.focus();
+    }
+});
+
+inputMonth.addEventListener('input', () => {
+    if(inputMonth.value.length === 2) {
+        inputYear.focus();
+    }
+});
+
+form.addEventListener('submit', (e) => {
+    validateForm(e);
+
+    alert("Formulário enviado com sucesso!");
 });
