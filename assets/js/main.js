@@ -39,6 +39,4 @@ inputMonth.addEventListener('input', () => {
 
 form.addEventListener('submit', (e) => {
     validateForm(e);
-
-    alert("Calculating!");
 });
