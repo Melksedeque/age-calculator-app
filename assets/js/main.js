@@ -44,7 +44,7 @@ form.addEventListener('submit', (e) => {
     if(validateForm(e) === true) {
         ageCalculator();
     }
-    else {
-        alert("Something is not working properly!");
-    }
+    // else {
+    //     alert("Something is not working properly!");
+    // }
 });
