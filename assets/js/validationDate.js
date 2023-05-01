@@ -41,14 +41,22 @@ function daysInMonth(month, year) {
 function validateForm(e) {
     e.preventDefault();
     const day = parseInt(inputDay.value, 10);
-    const month = parseInt(inputMonth.value, 10) - 1;
+    const month = parseInt(inputMonth.value, 10);
     const year = parseInt(inputYear.value, 10);
   
     validateEmptyFields();
   
     if (!isValidDate(day, month, year)) {
         inputDay.parentNode.classList.add('invalid');
+        inputMonth.parentNode.classList.add('invalid');
+        inputYear.parentNode.classList.add('invalid');
         spanValidationMessage.classList.remove('d-none');
-        return;
+        console.log(day);
+        console.log(month);
+        console.log(year);
+        return
     }
+
+    spanValidationMessage.classList.add('d-none');
+    alert("Calculating!");
 }
