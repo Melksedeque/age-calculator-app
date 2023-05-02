@@ -117,16 +117,12 @@ const days = Math.floor(((diffInMs % yearInMs) % monthInMs) / dayInMs);
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+After completing my current project, I intend to invest more time in improving my skills in API and AJAX. I believe these skills are essential for developing more dynamic and interactive web applications. Additionally, I plan to use these skills to start developing with React, one of the most popular and powerful libraries for user interface development. I believe that combining these skills will allow me to build more sophisticated and high-performance web applications that can meet the needs of the market and users.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Math.floor()](https://www.w3schools.com/jsref/jsref_floor.asp) - This function helped calculate the number of whole months remaining after subtracting all whole years from the difference between two dates, rounding the result down to an INT number.
+- [Date()](https://www.w3schools.com/js/js_date_methods.asp) - The Date() used in the function daysInMonth() function, returns the last day of the month of the year specified by the input arguments.
 
 ## Author
 
